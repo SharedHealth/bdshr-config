@@ -68,4 +68,79 @@
             <column name="date_created" valueDate="CURRENT_TIMESTAMP" />
         </insert>
     </changeSet>
+    <changeSet id="BD-V-201506181221" author="neha">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">
+                SELECT COUNT(*) FROM visit_type where name = 'inpatient';
+            </sqlCheck>
+        </preConditions>
+        <comment>Retire visit type inpatient</comment>
+        <update tableName="visit_type">
+            <column name="retired" value="1"/>
+            <column name="retired_by" value="1"/>
+            <column name="date_retired" valueComputed="now()"/>
+            <column name="retire_reason" value="Not needed for this config."/>
+            <where>name = 'inpatient'</where>
+        </update>
+    </changeSet>
+    <changeSet id="BD-V-201506181222" author="neha">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">
+                SELECT COUNT(*) FROM visit_type where name = 'outpatient';
+            </sqlCheck>
+        </preConditions>
+        <comment>Retire visit type outpatient</comment>
+        <update tableName="visit_type">
+            <column name="retired" value="1"/>
+            <column name="retired_by" value="1"/>
+            <column name="date_retired" valueComputed="now()"/>
+            <column name="retire_reason" value="Not needed for this config."/>
+            <where>name = 'outpatient'</where>
+        </update>
+    </changeSet>
+    <changeSet id="BD-V-201506181223" author="neha">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">
+                SELECT COUNT(*) FROM visit_type where name = 'emergency';
+            </sqlCheck>
+        </preConditions>
+        <comment>Retire visit type emergency</comment>
+        <update tableName="visit_type">
+            <column name="retired" value="1"/>
+            <column name="retired_by" value="1"/>
+            <column name="date_retired" valueComputed="now()"/>
+            <column name="retire_reason" value="Not needed for this config."/>
+            <where>name = 'emergency'</where>
+        </update>
+    </changeSet>
+    <changeSet id="BD-V-201506181224" author="neha">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">
+                SELECT COUNT(*) FROM visit_type where name = 'ambulatory';
+            </sqlCheck>
+        </preConditions>
+        <comment>Retire visit type ambulatory</comment>
+        <update tableName="visit_type">
+            <column name="retired" value="1"/>
+            <column name="retired_by" value="1"/>
+            <column name="date_retired" valueComputed="now()"/>
+            <column name="retire_reason" value="Not needed for this config."/>
+            <where>name = 'ambulatory'</where>
+        </update>
+    </changeSet>
+    <changeSet id="BD-V-201506181225" author="neha">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">
+                SELECT COUNT(*) FROM visit_type where name = 'home';
+            </sqlCheck>
+        </preConditions>
+        <comment>Retire visit type home</comment>
+        <update tableName="visit_type">
+            <column name="retired" value="1"/>
+            <column name="retired_by" value="1"/>
+            <column name="date_retired" valueComputed="now()"/>
+            <column name="retire_reason" value="Not needed for this config."/>
+            <where>name = 'home'</where>
+        </update>
+    </changeSet>
 </databaseChangeLog>

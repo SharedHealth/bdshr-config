@@ -19,24 +19,64 @@
             VALUES('FIELD', 'Field encounter', 1, now(), 0, uuid());
         </sql>
     </changeSet>
-    <changeSet id="BD-LOCATION-20150428-1247" author="Neha" context="setup">
+    <changeSet id="BD-LOCATION-20150618-1341" author="neha">
         <preConditions onFail="MARK_RAN">
-            <sqlCheck expectedResult="0">
+            <sqlCheck expectedResult="1">
+                SELECT COUNT(*) FROM location where name = 'Registration';
+            </sqlCheck>
+        </preConditions>
+        <comment>Retire location type Registration</comment>
+        <update tableName="location">
+            <column name="retired" value="1"/>
+            <column name="retired_by" value="1"/>
+            <column name="date_retired" valueComputed="now()"/>
+            <column name="retire_reason" value="Not needed for this config."/>
+            <where>name = 'Registration'</where>
+        </update>
+    </changeSet>
+    <changeSet id="BD-LOCATION-20150618-1342" author="neha">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">
+                SELECT COUNT(*) FROM location where name = 'OPD';
+            </sqlCheck>
+        </preConditions>
+        <comment>Retire location type OPD</comment>
+        <update tableName="location">
+            <column name="retired" value="1"/>
+            <column name="retired_by" value="1"/>
+            <column name="date_retired" valueComputed="now()"/>
+            <column name="retire_reason" value="Not needed for this config."/>
+            <where>name = 'OPD'</where>
+        </update>
+    </changeSet>
+    <changeSet id="BD-LOCATION-20150618-1343" author="neha">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">
+                SELECT COUNT(*) FROM location where name = 'Discharge';
+            </sqlCheck>
+        </preConditions>
+        <comment>Retire location type Discharge</comment>
+        <update tableName="location">
+            <column name="retired" value="1"/>
+            <column name="retired_by" value="1"/>
+            <column name="date_retired" valueComputed="now()"/>
+            <column name="retire_reason" value="Not needed for this config."/>
+            <where>name = 'Discharge'</where>
+        </update>
+    </changeSet>
+    <changeSet id="BD-LOCATION-20150618-1344" author="neha">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">
                 SELECT COUNT(*) FROM location where name = 'Field';
             </sqlCheck>
         </preConditions>
-        <comment>Setting Location for field</comment>
-        <sql>
-            INSERT INTO location(name, creator, date_created, uuid)
-            VALUES('Field', 1, now(), uuid());
-
-            INSERT INTO location_tag_map(location_id, location_tag_id)
-            VALUES((Select location_id from location where name ='Field'),
-            (Select location_tag_id from location_tag where name ='Login Location'));
-
-            INSERT INTO location_encounter_type_map(location_id, encounter_type_id, creator, date_created, uuid)
-            VALUES((Select location_id from location where name ='Field'),
-            (Select encounter_type_id from encounter_type where name ='FIELD'), 1, now(), uuid());
-        </sql>
+        <comment>Retire location type Field</comment>
+        <update tableName="location">
+            <column name="retired" value="1"/>
+            <column name="retired_by" value="1"/>
+            <column name="date_retired" valueComputed="now()"/>
+            <column name="retire_reason" value="Not needed for this config."/>
+            <where>name = 'Field'</where>
+        </update>
     </changeSet>
 </databaseChangeLog>

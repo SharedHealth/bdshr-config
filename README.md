@@ -1,14 +1,9 @@
-## Default Bahmni configuration and data. 
+## Default Bahmni configuration and data for CHW app. 
 ======================================================================
 
 #### Deploy
 - under server (apache) www directory
 - alias root (default-config) to bahmni_config
-
-
-#### Dev commands
-* `./scripts/vagrant-link.sh` to link default_config to vagrants /var/www/bahmni_config
-* `./scripts/vagrant-database.sh` to run liquibase migrations in vagrant 
 
 
 #### CI Deployment

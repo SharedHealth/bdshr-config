@@ -30,6 +30,18 @@
         "icon": "fa-patient-edit",
         "order": 1,
         "requiredPrivilege": "Edit Patients"
+    },
+    {
+        "id": "bahmni.patient.registration.next",
+        "extensionPointId": "org.bahmni.registration.patient.next",
+        "type": "config",
+        "extensionParams" : {
+            "display": "Enter <u>C</u>onsultation",
+            "shortcutKey": "c",
+            "forwardUrl": "../clinical/#/patient/{{patientUuid}}/dashboard"
+        },
+        "order": 1,
+        "requiredPrivilege": "app:clinical"
     }
 ]
 

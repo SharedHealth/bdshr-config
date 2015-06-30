@@ -93,7 +93,17 @@
                 },
                 "Treatment For Diarrhea" : {
                     "multiSelect" : true
+                },
+                "Danger Sign" : {
+                    "multiSelect" : true
+                },
+                "Family Planning" : {
+                    "multiselect" : true
+                },
+                "Newborn Care" : {
+                    "allowAddMore" :true
                 }
+                
             },
             "drugOrder": {
                 "defaultRoute": "Oral",

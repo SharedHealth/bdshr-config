@@ -90,6 +90,9 @@
                 "Relationship" : {
                     "autocomplete" : true,
                     "answersConceptName" : "Relationship Type"
+                },
+                "Treatment For Diarrhea" : {
+                    "multiSelect" : true
                 }
             },
             "drugOrder": {

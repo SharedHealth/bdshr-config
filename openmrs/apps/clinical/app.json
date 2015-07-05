@@ -62,11 +62,11 @@
                 "Treatment For Diarrhea" : {
                     "multiSelect" : true
                 },
-                "Danger Sign" : {
+                "Danger sign" : {
                     "multiSelect" : true
                 },
                 "Family Planning" : {
-                    "multiselect" : true
+                    "multiSelect" : true
                 },
                 "Newborn Care" : {
                     "allowAddMore" :true

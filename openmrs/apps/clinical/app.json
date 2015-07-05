@@ -23,25 +23,6 @@
             "obsIgnoreList" : [],
             "maxConceptSetLevels": 3,
             "conceptSetUI": {
-                "Chief Complaint" : {
-                    "answersConceptName" : "Chief Complaint Answers",
-                    "freeTextAutocomplete" : true,
-                    "durationRequired" : false,
-                    "allowAddMore" : true
-                },
-                "Non-Coded Chief Complaint" : {
-                    "answersConceptName" : "Chief Complaint Answers",
-                    "freeTextAutocomplete" : true,
-                    "durationRequired" : false,
-                    "allowAddMore" : true
-                },
-                "Relationship Diagnosis" : {
-                    "autocomplete" : true,
-                    "answersConceptName" : "Diagnosis Answers"
-                },
-                "Relationship" : {
-                    "autocomplete" : true
-                },
                 "Cause of Death" : {
                     "answersConceptName" : "Diagnosis Answers",
                     "autocomplete" : true
@@ -68,28 +49,15 @@
                 "Vaccination Refused" : {
                     "required": true
                 },
-                "Procedure": {
-                    "autocomplete" : true,
-                    "required" : true,
-                    "answersConceptName" : "Procedure"
-                },
                 "Diagnosis" : {
                     "autocomplete" : true,
                     "answersConceptName" : "Diagnosis Answers"
-                },
-                "Diagnostic Test" : {
-                    "autocomplete" : true,
-                    "answersConceptName" : "Diagnostic Test"
                 },
                 "Immunization Status" : {
                     "autocomplete" : true
                 },
                 "Birth Weight" : {
                     "autocomplete" : true
-                },
-                "Relationship" : {
-                    "autocomplete" : true,
-                    "answersConceptName" : "Relationship Type"
                 },
                 "Treatment For Diarrhea" : {
                     "multiSelect" : true
@@ -103,7 +71,6 @@
                 "Newborn Care" : {
                     "allowAddMore" :true
                 }
-                
             },
             "drugOrder": {
                 "defaultRoute": "Oral",

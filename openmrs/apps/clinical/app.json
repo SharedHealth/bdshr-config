@@ -68,6 +68,9 @@
                 "Family Planning" : {
                     "multiSelect" : true
                 },
+                "Newborn care received" : {
+                    "multiSelect" : true
+                },
                 "Newborn Care" : {
                     "allowAddMore" :true
                 }

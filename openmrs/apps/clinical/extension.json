@@ -21,16 +21,6 @@
         "requiredPrivilege": "app:clinical:diagnosisTab"
     },
     {
-        "id": "bahmni.clinical.consultation.treatment",
-        "extensionPointId": "org.bahmni.clinical.consultation.board",
-        "type": "link",
-        "label": "Treatment",
-        "url": "treatment",
-        "icon": "fa-user-md",
-        "order": 3,
-        "requiredPrivilege": "app:clinical:treatmentTab"
-    },
-    {
         "id": "bahmni.clinical.consultation.summary",
         "extensionPointId": "org.bahmni.clinical.consultation.board",
         "type": "link",

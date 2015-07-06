@@ -68,79 +68,80 @@
             <column name="date_created" valueDate="CURRENT_TIMESTAMP" />
         </insert>
     </changeSet>
-    <changeSet id="BD-V-201506181221" author="neha">
+    <changeSet id="BD-V-201507062051" author="tw">
         <preConditions onFail="MARK_RAN">
-            <sqlCheck expectedResult="1">
+            <sqlCheck expectedResult="0">
                 SELECT COUNT(*) FROM visit_type where name = 'inpatient';
             </sqlCheck>
         </preConditions>
-        <comment>Retire visit type inpatient</comment>
-        <update tableName="visit_type">
-            <column name="retired" value="1"/>
-            <column name="retired_by" value="1"/>
-            <column name="date_retired" valueComputed="now()"/>
-            <column name="retire_reason" value="Not needed for this config."/>
-            <where>name = 'inpatient'</where>
-        </update>
+        <comment>Create new visit type for inpatient</comment>
+        <insert tableName="visit_type">
+            <column name="name" value="inpatient" />
+            <column name="description" value="Visit for patients being admitted" />
+            <column name="creator" value="1" />
+            <column name="uuid" valueComputed="uuid()" />
+            <column name="date_created" valueDate="CURRENT_TIMESTAMP" />
+        </insert>
     </changeSet>
-    <changeSet id="BD-V-201506181222" author="neha">
+
+    <changeSet id="BD-V-201507062052" author="tw">
         <preConditions onFail="MARK_RAN">
-            <sqlCheck expectedResult="1">
+            <sqlCheck expectedResult="0">
                 SELECT COUNT(*) FROM visit_type where name = 'outpatient';
             </sqlCheck>
         </preConditions>
-        <comment>Retire visit type outpatient</comment>
-        <update tableName="visit_type">
-            <column name="retired" value="1"/>
-            <column name="retired_by" value="1"/>
-            <column name="date_retired" valueComputed="now()"/>
-            <column name="retire_reason" value="Not needed for this config."/>
-            <where>name = 'outpatient'</where>
-        </update>
+        <comment>Create new visit type for outpatient</comment>
+        <insert tableName="visit_type">
+            <column name="name" value="outpatient" />
+            <column name="description" value="Visit for patients coming for Out Patient" />
+            <column name="creator" value="1" />
+            <column name="uuid" valueComputed="uuid()" />
+            <column name="date_created" valueDate="CURRENT_TIMESTAMP" />
+        </insert>
     </changeSet>
-    <changeSet id="BD-V-201506181223" author="neha">
+    <changeSet id="BD-V-201507062053" author="tw">
         <preConditions onFail="MARK_RAN">
-            <sqlCheck expectedResult="1">
+            <sqlCheck expectedResult="0">
                 SELECT COUNT(*) FROM visit_type where name = 'emergency';
             </sqlCheck>
         </preConditions>
-        <comment>Retire visit type emergency</comment>
-        <update tableName="visit_type">
-            <column name="retired" value="1"/>
-            <column name="retired_by" value="1"/>
-            <column name="date_retired" valueComputed="now()"/>
-            <column name="retire_reason" value="Not needed for this config."/>
-            <where>name = 'emergency'</where>
-        </update>
+        <comment>Create new visit type for Emergency</comment>
+        <insert tableName="visit_type">
+            <column name="name" value="emergency" />
+            <column name="description" value="Emergency patient visit" />
+            <column name="creator" value="1" />
+            <column name="uuid" valueComputed="uuid()" />
+            <column name="date_created" valueDate="CURRENT_TIMESTAMP" />
+        </insert>
     </changeSet>
-    <changeSet id="BD-V-201506181224" author="neha">
+    <changeSet id="BD-V-201507062054" author="neha">
         <preConditions onFail="MARK_RAN">
-            <sqlCheck expectedResult="1">
+            <sqlCheck expectedResult="0">
                 SELECT COUNT(*) FROM visit_type where name = 'ambulatory';
             </sqlCheck>
         </preConditions>
-        <comment>Retire visit type ambulatory</comment>
-        <update tableName="visit_type">
-            <column name="retired" value="1"/>
-            <column name="retired_by" value="1"/>
-            <column name="date_retired" valueComputed="now()"/>
-            <column name="retire_reason" value="Not needed for this config."/>
-            <where>name = 'ambulatory'</where>
-        </update>
+        <comment>Create new visit type for Ambulatory</comment>
+        <insert tableName="visit_type">
+            <column name="name" value="ambulatory" />
+            <column name="description" value="Ambulatory patient visit" />
+            <column name="creator" value="1" />
+            <column name="uuid" valueComputed="uuid()" />
+            <column name="date_created" valueDate="CURRENT_TIMESTAMP" />
+        </insert>
     </changeSet>
-    <changeSet id="BD-V-201506181225" author="neha">
+    <changeSet id="BD-V-201507062055" author="neha">
         <preConditions onFail="MARK_RAN">
-            <sqlCheck expectedResult="1">
+            <sqlCheck expectedResult="0">
                 SELECT COUNT(*) FROM visit_type where name = 'home';
             </sqlCheck>
         </preConditions>
-        <comment>Retire visit type home</comment>
-        <update tableName="visit_type">
-            <column name="retired" value="1"/>
-            <column name="retired_by" value="1"/>
-            <column name="date_retired" valueComputed="now()"/>
-            <column name="retire_reason" value="Not needed for this config."/>
-            <where>name = 'home'</where>
-        </update>
+        <comment>Create new visit type for Home</comment>
+        <insert tableName="visit_type">
+            <column name="name" value="home" />
+            <column name="description" value="Home patient visit" />
+            <column name="creator" value="1" />
+            <column name="uuid" valueComputed="uuid()" />
+            <column name="date_created" valueDate="CURRENT_TIMESTAMP" />
+        </insert>
     </changeSet>
 </databaseChangeLog>

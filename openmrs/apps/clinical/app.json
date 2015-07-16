@@ -76,9 +76,6 @@
                 },
                 "Treatment Given" : {
                  "multiSelect" : true    
-                },
-                "Immunization given" : {
-                    "allowAddMore" : true
                 }
               
             },

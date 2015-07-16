@@ -73,7 +73,14 @@
                 },
                 "Newborn Care" : {
                     "allowAddMore" :true
+                },
+                "Treatment Given" : {
+                 "multiSelect" : true    
+                },
+                "Immunization given" : {
+                    "allowAddMore" : true
                 }
+              
             },
             "drugOrder": {
                 "defaultRoute": "Oral",

@@ -22,6 +22,9 @@
         "config" : {
             "obsIgnoreList" : [],
             "maxConceptSetLevels": 3,
+            "visitTypeForRetrospectiveEntries": "field",
+            "allowConsultationWhenNoOpenVisit": true,
+            "defaultVisitType": "field",
             "conceptSetUI": {
                 "Cause of Death" : {
                     "answersConceptName" : "Diagnosis Answers",

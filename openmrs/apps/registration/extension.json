@@ -42,5 +42,11 @@
         },
         "order": 1,
         "requiredPrivilege": "app:clinical"
+    },
+    "birthTime": {
+        "id": "bahmni.patient.registration.birthTime",
+        "extensionPointId": "org.bahmni.patient.registration.birthTime",
+        "type": "config",
+        "showBirthTime": true
     }
 }

@@ -3,6 +3,6 @@
         "title": "General",
         "displayByDefault": true,
         "defaultSections": true,
-        "sections": []
+        "sections": {}
     }
 ]

@@ -1,110 +1,107 @@
-[
-    {
-        "id": "bahmni.clinical",
-        "extensionPoints": [
-            {
-                "id": "org.bahmni.clinical.consultation.board",
-                "description": "Bahmni Clinical Consultation Page"
+{
+    "id": "bahmni.clinical",
+    "extensionPoints": [
+        {
+            "id": "org.bahmni.clinical.consultation.board",
+            "description": "Bahmni Clinical Consultation Page"
+        },
+        {
+            "id": "org.bahmni.clinical.conceptSetGroup.*",
+            "description": "Define conceptsets part of a conceptset group"
+        },
+        {
+            "id": "org.bahmni.patient.search",
+            "description": "Bahmni Patient search, lookups Page"
+        }
+    ],
+    "contextModel": [
+        "patientUuid",
+        "visitUuid"
+    ],
+    "config": {
+        "obsIgnoreList": [],
+        "maxConceptSetLevels": 3,
+        "visitTypeForRetrospectiveEntries": "field",
+        "allowConsultationWhenNoOpenVisit": true,
+        "defaultVisitType": "field",
+        "conceptSetUI": {
+            "Cause of Death": {
+                "answersConceptName": "Diagnosis Answers",
+                "autocomplete": true
             },
-            {
-                "id": "org.bahmni.clinical.conceptSetGroup.*",
-                "description": "Define conceptsets part of a conceptset group"
+            "Immunization Reason": {
+                "autocomplete": true
             },
-            {
-                "id":"org.bahmni.patient.search",
-                "description": "Bahmni Patient search, lookups Page"
+            "No Immunization Reason": {
+                "autocomplete": true
+            },
+            "Quantity Units": {
+                "autocomplete": true
+            },
+            "Vaccine": {
+                "autocomplete": true,
+                "required": true
+            },
+            "Route of Administration": {
+                "autocomplete": true
+            },
+            "Vaccination Reported": {
+                "required": true
+            },
+            "Vaccination Refused": {
+                "required": true
+            },
+            "Diagnosis": {
+                "autocomplete": true,
+                "answersConceptName": "Diagnosis Answers"
+            },
+            "Immunization Status": {
+                "autocomplete": true
+            },
+            "Birth Weight": {
+                "autocomplete": true
+            },
+            "Treatment For Diarrhea": {
+                "multiSelect": true
+            },
+            "Danger sign": {
+                "multiSelect": true
+            },
+            "Family Planning": {
+                "multiSelect": true
+            },
+            "Newborn care received": {
+                "multiSelect": true
+            },
+            "Newborn Care": {
+                "allowAddMore": true
+            },
+            "Treatment Given": {
+                "multiSelect": true
             }
-        ],
-        "contextModel": [
-            "patientUuid",
-            "visitUuid"
-        ],
-        "config" : {
-            "obsIgnoreList" : [],
-            "maxConceptSetLevels": 3,
-            "visitTypeForRetrospectiveEntries": "field",
-            "allowConsultationWhenNoOpenVisit": true,
-            "defaultVisitType": "field",
-            "conceptSetUI": {
-                "Cause of Death" : {
-                    "answersConceptName" : "Diagnosis Answers",
-                    "autocomplete" : true
+        },
+        "drugOrder": {
+            "defaultRoute": "Oral",
+            "defaultDurationUnit": "Day(s)",
+            "defaultDoseUnit": "Tablet(s)",
+            "defaultInstructions": "As directed",
+            "drugFormDefaults": {
+                "Ayurvedic": {
+                    "doseUnits": "Teaspoon",
+                    "route": "Oral"
                 },
-                "Immunization Reason" : {
-                    "autocomplete" : true
+                "Capsule": {
+                    "doseUnits": "Capsule(s)",
+                    "route": "Oral"
                 },
-                "No Immunization Reason" : {
-                    "autocomplete" : true
+                "Powder": {
+                    "route": "Intrathecal"
                 },
-                "Quantity Units" : {
-                    "autocomplete" : true
-                },
-                "Vaccine" : {
-                    "autocomplete" : true,
-                    "required": true
-                },
-                "Route of Administration" : {
-                    "autocomplete" : true
-                },
-                "Vaccination Reported" : {
-                    "required": true
-                },
-                "Vaccination Refused" : {
-                    "required": true
-                },
-                "Diagnosis" : {
-                    "autocomplete" : true,
-                    "answersConceptName" : "Diagnosis Answers"
-                },
-                "Immunization Status" : {
-                    "autocomplete" : true
-                },
-                "Birth Weight" : {
-                    "autocomplete" : true
-                },
-                "Treatment For Diarrhea" : {
-                    "multiSelect" : true
-                },
-                "Danger sign" : {
-                    "multiSelect" : true
-                },
-                "Family Planning" : {
-                    "multiSelect" : true
-                },
-                "Newborn care received" : {
-                    "multiSelect" : true
-                },
-                "Newborn Care" : {
-                    "allowAddMore" :true
-                },
-                "Treatment Given" : {
-                 "multiSelect" : true    
-                }
-              
-            },
-            "drugOrder": {
-                "defaultRoute": "Oral",
-                "defaultDurationUnit": "Day(s)",
-                "defaultDoseUnit": "Tablet(s)",
-                "defaultInstructions": "As directed",
-                "drugFormDefaults" : {
-                    "Ayurvedic" : {
-                        "doseUnits": "Teaspoon",
-                        "route": "Oral"
-                    },
-                    "Capsule" : {
-                        "doseUnits": "Capsule(s)",
-                        "route": "Oral"
-                    },
-                    "Powder" : {
-                        "route": "Intrathecal"
-                    },
-                    "Injection" : {
-                        "doseUnits": "mg",
-                        "route": "Intravenous"
-                    }
+                "Injection": {
+                    "doseUnits": "mg",
+                    "route": "Intravenous"
                 }
             }
         }
     }
-]
+}

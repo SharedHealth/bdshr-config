@@ -2,29 +2,33 @@
     {
         "dashboardName": "Dashboard",
         "displayByDefault": true,
-        "sections": [
-            {
+        "sections": {
+            "patient_information": {
                 "title": "Patient Information",
                 "name": "patientInformation",
-                "patientAttributes": ["Health ID"],
-                "addressFields": []
-
+                "patientAttributes": [
+                    "Health ID"
+                ],
+                "addressFields": [],
+                "displayOrder": 0
             },
-            {
+            "diagnosis": {
                 "title": "Diagnosis",
                 "name": "diagnosis",
                 "showDetailsButton": false,
                 "showCertainty": true,
-                "showOrder": true
+                "showOrder": true,
+                "displayOrder": 1
             },
-            {
+            "visits": {
                 "title": "Visits",
                 "name": "visits",
                 "dashboardParams": {
                     "title": null,
                     "maximumNoOfVisits": 10
-                }
+                },
+                "displayOrder": 2
             }
-        ]
+        }
     }
 ]

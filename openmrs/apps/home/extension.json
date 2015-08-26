@@ -1,5 +1,5 @@
-[
-    {
+{
+    "bahmniRegistration": {
         "id": "bahmni.registration",
         "extensionPointId": "org.bahmni.home.dashboard",
         "type": "link",
@@ -9,7 +9,7 @@
         "order": 1,
         "requiredPrivilege": "app:registration"
     },
-    {
+    "bahmniClinical": {
         "id": "bahmni.clinical",
         "extensionPointId": "org.bahmni.home.dashboard",
         "type": "link",
@@ -19,7 +19,7 @@
         "order": 3,
         "requiredPrivilege": "app:clinical"
     },
-    {
+    "nationalRegistrySearch": {
         "id": "bahmni.nationalregistry.search",
         "extensionPointId": "org.bahmni.home.dashboard",
         "type": "link",
@@ -29,4 +29,4 @@
         "order": 7,
         "requiredPrivilege": "National Registry"
     }
-]
+}

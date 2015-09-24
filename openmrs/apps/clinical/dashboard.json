@@ -4,7 +4,7 @@
         "displayByDefault": true,
         "sections": {
             "patient_information": {
-                "title": "Patient Information",
+                "translationKey": "Patient Information",
                 "name": "patientInformation",
                 "patientAttributes": [
                     "Health ID"
@@ -13,7 +13,7 @@
                 "displayOrder": 0
             },
             "diagnosis": {
-                "title": "Diagnosis",
+                "translationKey": "Diagnosis",
                 "name": "diagnosis",
                 "showDetailsButton": false,
                 "showCertainty": true,
@@ -21,7 +21,7 @@
                 "displayOrder": 1
             },
             "visits": {
-                "title": "Visits",
+                "translationKey": "Visits",
                 "name": "visits",
                 "dashboardParams": {
                     "title": null,

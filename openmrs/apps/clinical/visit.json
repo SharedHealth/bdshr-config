@@ -1,6 +1,6 @@
 [
     {
-        "title": "General",
+        "translationKey": "General",
         "displayByDefault": true,
         "defaultSections": true,
         "sections": {}

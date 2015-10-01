@@ -54,5 +54,18 @@
         "label": "All",
         "order": 2,
         "requiredPrivilege": "app:clinical"
+    },
+    "programs": {
+        "id": "bahmni.clinical.patients.search.allPatients",
+        "extensionPointId": "org.bahmni.patient.search",
+        "type": "config",
+        "extensionParams": {
+            "searchHandler": "emrapi.sqlSearch.activePatientsByProvider",
+            "display":"Programs",
+            "forwardUrl" : "#/default/patient/{{patientUuid}}/consultationContext"
+        },
+        "label": "Programs",
+        "order": 4,
+        "requiredPrivilege": "app:clinical"
     }
 }

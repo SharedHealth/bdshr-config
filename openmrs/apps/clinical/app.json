@@ -79,6 +79,9 @@
             },
             "Treatment Given": {
                 "multiSelect": true
+            },
+            "Immunization Incident Vaccine": {
+                "buttonSelect": true
             }
         },
         "drugOrder": {

@@ -182,4 +182,28 @@
             VALUES ('Phone Number', 'Phone Number', 'java.lang.String', '1', 1, curdate(), 0, 8, uuid());
         </sql>
     </changeSet>
+    <changeSet id="BD-20151005-1300" author="sanjana" context="setup">
+        <preConditions  onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                select count(*) from person_attribute_type where name = 'fatherName';
+            </sqlCheck>
+        </preConditions>
+        <comment>Add Father's name attribute</comment>
+        <sql>
+            INSERT INTO person_attribute_type (name, description, format, searchable, creator, date_created, retired, sort_weight, uuid)
+            VALUES ('fatherName', 'Father\'s Name', 'java.lang.String', '1', 1, now(), 0, 9, uuid());
+        </sql>
+    </changeSet>
+    <changeSet id="BD-20151005-1435" author="sanjana" context="setup">
+        <preConditions  onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                select count(*) from person_attribute_type where name = 'spouseName';
+            </sqlCheck>
+        </preConditions>
+        <comment>Add Spouse's name attribute</comment>
+        <sql>
+            INSERT INTO person_attribute_type (name, description, format, searchable, creator, date_created, retired, sort_weight, uuid)
+            VALUES ('spouseName', 'Spouse\'s Name', 'java.lang.String', '1', 1, now(), 0, 10, uuid());
+        </sql>
+    </changeSet>
 </databaseChangeLog>

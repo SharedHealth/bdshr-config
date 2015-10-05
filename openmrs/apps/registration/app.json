@@ -69,15 +69,15 @@
                 "field": "address2"
             },
             "customAttributes": {
-                "label": "ID/Bangla Name/Phone",
-                "placeholder": "ID/Bangla Name/Phone",
+                "label": "ID/Phone/Father/Spouse ",
+                "placeholder": "ID/Phone/Father/Spouse",
                 "fields": [
                     "National ID",
                     "Health ID",
                     "Birth Registration Id",
-                    "givenNameLocal",
-                    "familyNameLocal",
-                    "Phone Number"
+                    "Phone Number",
+                    "fatherName",
+                    "spouseName"
                 ]
             }
         }

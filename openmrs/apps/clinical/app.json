@@ -82,6 +82,9 @@
             },
             "Immunization Incident Vaccine": {
                 "buttonSelect": true
+            },
+            "Immunization Incident Template": {
+                "allowAddMore": true  
             }
         },
         "drugOrder": {

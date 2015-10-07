@@ -85,6 +85,11 @@
             },
             "Immunization Incident Template": {
                 "allowAddMore": true  
+            },
+            "Place of delivery": {
+                "autocomplete": {
+                    "src": "self"
+                }
             }
         },
         "drugOrder": {

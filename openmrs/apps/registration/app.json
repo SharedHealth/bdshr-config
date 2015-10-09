@@ -24,6 +24,7 @@
         "autoCompleteFields": [
             "familyName"
         ],
+        "prepopulateFields" : ["Division", "Zilla", "Upazilla"],
         "defaultIdentifierPrefix": "BDH",
         "defaultVisitType": "field",
         "searchByIdForwardUrl": "/patient/{{patientUuid}}",

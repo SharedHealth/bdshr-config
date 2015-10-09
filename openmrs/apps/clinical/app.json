@@ -83,7 +83,7 @@
             "Immunization Incident Vaccine": {
                 "buttonSelect": true
             },
-            "Immunization Incident Template": {
+            "Immunization Incident Group": {
                 "allowAddMore": true  
             },
             "Place of delivery": {

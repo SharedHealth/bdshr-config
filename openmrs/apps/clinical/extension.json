@@ -40,7 +40,7 @@
             "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard"
         },
         "label": "Active",
-        "order": 1,
+        "order": 2,
         "requiredPrivilege": "app:clinical"
     },
     "bahmni_clinical_patients_search_allpatients_all_app:clinical": {
@@ -52,7 +52,7 @@
             "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard"
         },
         "label": "All",
-        "order": 2,
+        "order": 3,
         "requiredPrivilege": "app:clinical"
     },
     "programs": {
@@ -65,7 +65,7 @@
             "forwardUrl" : "#/default/patient/{{patientUuid}}/consultationContext"
         },
         "label": "Programs",
-        "order": 4,
+        "order": 1,
         "requiredPrivilege": "app:clinical"
     }
 }

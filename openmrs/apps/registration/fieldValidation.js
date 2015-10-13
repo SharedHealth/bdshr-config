@@ -29,7 +29,8 @@ var containTwoSetsOfThreeConsecutiveDigits = function(healthId) {
 }
 
 customValidator = {
-	"Health ID": {
+	"healthId": {
+>>>>>>> c5f3eda... sukreet | BSHR-986 | Removing spaces from patient attributes in apps
 		method: function(name, value, attributeDetails) {
 			if (containFourConsecutiveDigits(value)) {
 				return false;

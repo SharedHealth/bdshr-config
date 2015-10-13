@@ -41,11 +41,11 @@
             }
         },
         "fieldValidation": {
-            "National ID": {
+            "nationalId": {
                 "pattern": "^(\\d{13}|\\d{17})$",
                 "errorMessage": "National ID should be 13 or 17 digits"
             },
-            "Birth Registration Id": {
+            "birthRegistrationId": {
                 "pattern": "^\\d{17}$",
                 "errorMessage": "Birth Registration Number should be 17 digits"
             },
@@ -53,11 +53,11 @@
                 "pattern": "^[a-zA-Z0-9]{11}$",
                 "errorMessage": "Unique Identifier should be 11 characters"
             },
-            "Phone Number": {
+            "phoneNumber": {
                 "pattern": "^(\\d{3,12})$",
                 "errorMessage": "Phone Number should be between 3 to 12 digits"
             },
-            "Health ID" : {
+            "healthId" : {
                 "pattern" : "^[9][1-9][0-9]{9}$",
                 "errorMessage" : "Please enter a valid HID"
             }
@@ -72,10 +72,10 @@
                 "label": "ID/Phone/Father/Spouse ",
                 "placeholder": "ID/Phone/Father/Spouse",
                 "fields": [
-                    "National ID",
-                    "Health ID",
-                    "Birth Registration Id",
-                    "Phone Number",
+                    "nationalId",
+                    "healthId",
+                    "birthRegistrationId",
+                    "phoneNumber",
                     "fatherName",
                     "spouseName"
                 ]

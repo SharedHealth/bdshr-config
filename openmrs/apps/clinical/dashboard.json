@@ -7,7 +7,7 @@
                 "title": "Patient Information",
                 "name": "patientInformation",
                 "patientAttributes": [
-                    "Health ID"
+                    "healthId"
                 ],
                 "addressFields": [],
                 "displayOrder": 0

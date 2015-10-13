@@ -90,6 +90,11 @@
                 "autocomplete": {
                     "src": "self"
                 }
+            },
+            "Outcome of delivery": {
+                "autocomplete": {
+                    "src": "self"
+                }
             }
         },
         "drugOrder": {

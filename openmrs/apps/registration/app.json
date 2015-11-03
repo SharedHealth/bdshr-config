@@ -59,7 +59,7 @@
                 "errorMessage" : "Please enter a valid HID"
             },
             "address1" : {
-                "pattern" : "[a-zA-Z0-9]{3}",
+                "pattern" : "^(\\s*[^\\s]\\s*){3,255}$",
                 "errorMessage" : "Should contain 3 characters"
             }
 

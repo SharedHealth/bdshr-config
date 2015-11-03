@@ -50,10 +50,6 @@
                 "pattern": "^\\d{17}$",
                 "errorMessage": "Birth Registration Number should be 17 digits"
             },
-            "Unique Id": {
-                "pattern": "^[a-zA-Z0-9]{11}$",
-                "errorMessage": "Unique Identifier should be 11 characters"
-            },
             "phoneNumber": {
                 "pattern": "^(\\d{3,12})$",
                 "errorMessage": "Phone Number should be between 3 to 12 digits"
@@ -61,7 +57,12 @@
             "healthId" : {
                 "pattern" : "^[9][1-9][0-9]{9}$",
                 "errorMessage" : "Please enter a valid HID"
+            },
+            "address1" : {
+                "pattern" : "[a-zA-Z0-9]{3}",
+                "errorMessage" : "Should contain 3 characters"
             }
+
         },
         "patientSearch": {
             "address": {

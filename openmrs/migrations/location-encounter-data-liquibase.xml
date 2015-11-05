@@ -79,4 +79,16 @@
             <where>name = 'Field'</where>
         </update>
     </changeSet>
+    <changeSet id="BD-LOCATION-20151105-1419" author="sanjana">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">
+                SELECT COUNT(*) FROM global_property where property='bahmni.encounterType.default';
+            </sqlCheck>
+        </preConditions>
+        <comment>Setting default encounter type to Field for CHW</comment>
+        <update tableName="global_property">
+            <column name="property_value" value="Field"/>
+            <where>property='bahmni.encounterType.default'</where>
+        </update>
+    </changeSet>
 </databaseChangeLog>

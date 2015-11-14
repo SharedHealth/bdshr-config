@@ -39,8 +39,11 @@
             "Quantity Units": {
                 "autocomplete": true
             },
-            "Vaccine": {
-                "autocomplete": true,
+            "Immunization Incident Group": {
+                "allowAddMore": true  
+            },
+            "Immunization Incident Vaccine": {
+                "autocomplete":true,
                 "required": true
             },
             "Route of Administration": {
@@ -68,17 +71,11 @@
             "Newborn care received": {
                 "multiSelect": true
             },
-            "Newborn Care": {
+            "Baby Information": {
                 "allowAddMore": true
             },
             "Treatment Given": {
                 "multiSelect": true
-            },
-            "Immunization Incident Vaccine": {
-                "buttonSelect": true
-            },
-            "Immunization Incident Group": {
-                "allowAddMore": true  
             },
             "Place of delivery": {
                 "autocomplete": {

@@ -39,11 +39,8 @@
             "Quantity Units": {
                 "autocomplete": true
             },
-            "Immunization Incident Group": {
-                "allowAddMore": true  
-            },
             "Immunization Incident Vaccine": {
-                "autocomplete":true,
+                "autocomplete": true,
                 "required": true
             },
             "Route of Administration": {
@@ -77,6 +74,9 @@
             "Treatment Given": {
                 "multiSelect": true
             },
+            "Immunization Incident Group": {
+                "allowAddMore": true
+            },
             "Place of delivery": {
                 "autocomplete": {
                     "src": "self"
@@ -86,6 +86,18 @@
                 "autocomplete": {
                     "src": "self"
                 }
+            },
+            "Commonly advised drugs": {
+                "autocomplete":true
+            },
+            "Drug detail" : {
+                "allowAddMore": true
+            },
+            "CHW common patient diagnosis" : {
+               "autocomplete": true
+            },
+            "Patient problem" : {
+               "allowAddMore": true
             }
         },
         "drugOrder": {
@@ -113,3 +125,4 @@
         }
     }
 }
+

@@ -42,6 +42,10 @@
             }
         },
         "fieldValidation": {
+            "familyName" : {
+                "pattern" : "^([A-Za-z]*)$",
+                "errorMessage" : "Family name should only have alphabets, not even space"
+            },
             "nationalId": {
                 "pattern": "^(\\d{13}|\\d{17})$",
                 "errorMessage": "National ID should be 13 or 17 digits"

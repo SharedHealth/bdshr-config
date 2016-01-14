@@ -175,4 +175,9 @@
             update order_frequency set retired = 1, date_retired=now(), retire_reason='Not an order frequency' where concept_id = @concept_id;
         </sql>
     </changeSet>
+    <changeSet id="20160114-2114" author="angshu" context="setup">
+        <comment>active patients list in clinical module</comment>
+        <sqlFile path="ActivePatientsForCC.sql"/>
+    </changeSet>
+
 </databaseChangeLog>

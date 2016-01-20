@@ -28,7 +28,7 @@
         "conceptSetUI": {
             "Cause of Death": {
                 "answersConceptName": "Diagnosis Answers",
-                "autocomplete": true
+                "freeTextAutocomplete": true
             },
             "Immunization Reason": {
                 "autocomplete": true
@@ -47,7 +47,7 @@
                 "autocomplete": true
             },
             "Diagnosis": {
-                "autocomplete": true,
+                "freeTextAutocomplete": true,
                 "answersConceptName": "Diagnosis Answers"
             },
             "Immunization Status": {

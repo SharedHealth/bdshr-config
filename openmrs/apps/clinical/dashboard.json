@@ -19,6 +19,18 @@
             "showOrder": true,
             "displayOrder": 1
         },
+        "procedureOrders": {
+            "orderType": "Procedure Order",
+            "title": "Procedure Orders",
+            "name": "ordersControl",
+            "displayOrder": 3,
+            "dashboardParams": {
+                "conceptNames": [
+                    "Procedure Template"
+                ],
+                "numberOfVisits": 4
+            }
+        },
         "visits": {
             "translationKey": "Visits",
             "name": "visits",

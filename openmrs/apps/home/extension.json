@@ -28,15 +28,5 @@
         "icon": "fa-user",
         "order": 7,
         "requiredPrivilege": "National Registry"
-    },
-    "programs": {
-      "id": "bahmni.programs",
-      "extensionPointId": "org.bahmni.home.dashboard",
-      "type": "link",
-      "label": "Programs",
-      "url": "../clinical/#/PROGRAMS/patient/search",
-      "icon": "fa-tasks",
-      "order": 2,
-      "requiredPrivilege": "app:clinical"
     }
 }

@@ -28,7 +28,7 @@
         "conceptSetUI": {
             "Cause of Death": {
                 "answersConceptName": "Diagnosis Answers",
-                "freeTextAutocomplete": true
+                "autocomplete": true
             },
             "Immunization Reason": {
                 "autocomplete": true
@@ -41,7 +41,8 @@
             },
             "Immunization Incident Vaccine": {
                 "autocomplete": true,
-                "required": true
+                "required": true,
+                "src": "self"
             },
             "Route of Administration": {
                 "autocomplete": true

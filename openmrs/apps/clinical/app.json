@@ -78,6 +78,9 @@
             "Immunization Incident Group": {
                 "allowAddMore": true
             },
+            "Estimated date of delivery": {
+                "allowFutureDates": true
+            },
             "Place of delivery": {
                 "autocomplete": {
                     "src": "self"

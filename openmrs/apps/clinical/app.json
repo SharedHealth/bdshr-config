@@ -40,9 +40,8 @@
                 "autocomplete": true
             },
             "Immunization Incident Vaccine": {
-                "autocomplete": true,
                 "required": true,
-                "src": "self"
+                "dropdown" : true
             },
             "Route of Administration": {
                 "autocomplete": true
@@ -92,13 +91,13 @@
                 }
             },
             "Commonly advised drugs": {
-                "autocomplete":true
+                "dropdown":true
             },
             "Drug detail" : {
                 "allowAddMore": true
             },
             "CHW common patient diagnosis" : {
-               "autocomplete": true
+               "dropdown": true
             },
             "Patient problem" : {
                "allowAddMore": true

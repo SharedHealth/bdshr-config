@@ -360,4 +360,28 @@
             update person_attribute_type set retired=1, retired_by=1, date_retired=now(), retire_reason='not needed for BD' where name = 'middleNameLocal';
         </sql>
     </changeSet>
+    <changeSet id="BD-20160307-1225" author="neha,sukreet" context="setup">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                select count(*) from person_attribute_type where name = 'motherName';
+            </sqlCheck>
+        </preConditions>
+        <comment>Add Mother's name attribute</comment>
+        <sql>
+            INSERT INTO person_attribute_type (name, description, format, searchable, creator, date_created, retired, sort_weight, uuid)
+            VALUES ('motherName', 'Mother\'s Name', 'java.lang.String', '1', 1, now(), 0, 2, uuid());
+        </sql>
+    </changeSet>
+    <changeSet id="BD-20160307-1231" author="neha,sukreet">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">
+                select count(*) from person_attribute_type where name = 'motherName';
+            </sqlCheck>
+        </preConditions>
+        <comment>Unretiring attribute mother Name</comment>
+        <sql>
+            UPDATE person_attribute_type SET retired = 0, retired_by = null, date_retired = null
+            WHERE name = 'motherName';
+        </sql>
+    </changeSet>
 </databaseChangeLog>

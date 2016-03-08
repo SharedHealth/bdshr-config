@@ -179,5 +179,10 @@
         <comment>active patients list in clinical module</comment>
         <sqlFile path="ActivePatientsForCC.sql"/>
     </changeSet>
-
+    <changeSet id='201603081440' author='Neha,Sukreet' context='setup'>
+        <comment>Increasing the person attribute value size to 150</comment>
+        <sql>
+            ALTER TABLE person_attribute ALTER COLUMN value TYPE character varying(150);
+        </sql>
+    </changeSet>
 </databaseChangeLog>

@@ -384,4 +384,16 @@
             WHERE name = 'motherName';
         </sql>
     </changeSet>
+    <changeSet id="BD-20160323-1700" author="shashi, padma" context="setup">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                select count(*) from person_attribute_type where name = 'addressCode';
+            </sqlCheck>
+        </preConditions>
+        <comment>Add Address Code attribute</comment>
+        <sql>
+            INSERT INTO person_attribute_type (name, description, format, searchable, creator, date_created, retired, sort_weight, uuid)
+            VALUES ('addressCode', 'Address Code', 'java.lang.String', '1', 1, now(), 0, 2, uuid());
+        </sql>
+    </changeSet>
 </databaseChangeLog>

@@ -3,7 +3,7 @@
     "displayByDefault": true,
     "sections": {
         "patient_information": {
-            "translationKey": "Patient Information",
+            "translationKey": "DASHBOARD_TITLE_PATIENT_INFORMATION_KEY",
             "name": "patientInformation",
             "patientAttributes": [
                 "healthId"
@@ -19,26 +19,40 @@
             "showOrder": true,
             "displayOrder": 1
         },
-        "procedureOrders": {
-            "orderType": "Procedure Order",
-            "title": "Procedure Orders",
-            "name": "ordersControl",
-            "displayOrder": 3,
+        "patientProblems": {
+            "title": "Patient Diagnosis",
+            "translationKey": "DASHBOARD_TITLE_PATIENT_DIAGNOSIS",
+            "name": "patientDiagnosis",
+            "isObservation": true,
             "dashboardParams": {
                 "conceptNames": [
-                    "Procedure Template"
+                  "CHW common patient diagnosis"
                 ],
-                "numberOfVisits": 4
-            }
+                "numberOfVisits": 2
+            },
+            "displayOrder": 2
+        },
+        "drugDetail": {
+            "title": "Drug Detail",
+            "translationKey": "DASHBOARD_TITLE_DRUG_DETAIL",
+            "name": "drugDetail",
+            "isObservation": true,
+            "dashboardParams": {
+                "conceptNames": [
+                  "Commonly advised drugs"
+                ],
+                "numberOfVisits": 2
+            },
+            "displayOrder": 3
         },
         "visits": {
-            "translationKey": "Visits",
+            "translationKey": "DASHBOARD_TITLE_VISITS_KEY",
             "name": "visits",
             "dashboardParams": {
                 "title": null,
                 "maximumNoOfVisits": 10
             },
-            "displayOrder": 2
+            "displayOrder": 5
         },
         "navigationLinksControl": {
             "title": "Navigation Links Control",
@@ -46,7 +60,8 @@
             "links": [{
                 "title": "Programs Dashboard",
                 "url": "#/default/patient/{{patientUuid}}/consultationContext"
-            }]
+            }],
+            "displayOrder": 6
         }
     }
 }]

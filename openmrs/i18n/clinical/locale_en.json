@@ -14,5 +14,9 @@
   "CONSULTATION_BOARD_LABEL_KEY": "Consultation",
   "CONSULTATION_PAGE_KEY": "Consultation",
   "HOME_DASHBOARD_KEY": "Home Dashboard",
-  "HOME_DASHBOARD": "Home Dashboard"
+  "HOME_DASHBOARD": "Home Dashboard",
+  "DASHBOARD_TITLE_TREATMENTS_KEY":"Treatment",
+  "DASHBOARD_TITLE_VITALS_KEY":"Vitals",
+  "DASHBOARD_TITLE_HISTORY_AND_EXAMINATIONS_KEY":"History and Examination",
+  "DASHBOARD_TITLE_Consultation_KEY":"Consultation Notes"
 }

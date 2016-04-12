@@ -31,7 +31,7 @@
                 ]
             }
         },
-        "prepopulateFields" : ["Division", "Zilla", "Upazilla"],
+        "prepopulateFields" : ["Division", "Zilla", "Upazilla","Paurasava","Ward/Union"],
         "defaultIdentifierPrefix": "BDH",
         "defaultVisitType": "field",
         "searchByIdForwardUrl": "/patient/{{patientUuid}}",

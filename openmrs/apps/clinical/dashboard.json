@@ -140,18 +140,18 @@
                 "isObservation": true,
                 "dashboardParams": {
                     "conceptNames": [
-                        "ANC Notes",
-                        "PNC Notes",
-                        "Delivery Note",
+                         "ANC visit information",
+                        "PNC visit information",
+                        "delivery information",
                         "Newborn information"
                     ],
                     "numberOfVisits": 4
                 },
                 "allObservationDetails": {
                     "conceptNames": [
-                        "ANC Notes",
-                        "PNC Notes",
-                        "Delivery Note",
+                         "ANC visit information",
+                        "PNC visit information",
+                        "delivery information",
                         "Newborn information"
                     ],
                     "numberOfVisits": 4,

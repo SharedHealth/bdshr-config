@@ -5,7 +5,7 @@
         "sections": {
             "patientInformation": {
                 "title": "Patient Information",
-                "name": "patientInformation",
+                "type": "patientInformation",
                 "patientAttributes": [
                     "healthId",
                     "fatherName",
@@ -30,7 +30,7 @@
             },
             "diagnosis": {
                 "translationKey": "DASHBOARD_TITLE_DIAGNOSIS_KEY",
-                "name": "diagnosis",
+                "type": "diagnosis",
                 "showCertainty": true,
                 "showDetailsButton": true,
                 "showOrder": false,
@@ -39,8 +39,8 @@
             "treatments": {
                 "title": "Treatments",
                 "translationKey": "DASHBOARD_TITLE_TREATMENTS_KEY",
-                "name": "treatment",
-                "dashboardParams": {
+                "type": "treatment",
+                "dashboardConfig": {
                     "showFlowSheet": true,
                     "showListView": true,
                     "showRoute": true,
@@ -49,7 +49,7 @@
                     "showOtherActive": true,
                     "showDetailsButton": true
                 },
-                "allTreatmentDetails": {
+                "expandedViewConfig": {
                     "title": "Treatments",
                     "translationKey": "DASHBOARD_TITLE_TREATMENTS_KEY",
                     "showFlowSheet": true,
@@ -65,15 +65,15 @@
             "vitals": {
                 "title": "Vitals",
                 "translationKey": "DASHBOARD_TITLE_VITALS_KEY",
-                "name": "vitals",
+                "type": "vitals",
                 "isObservation": true,
-                "dashboardParams": {
+                "dashboardConfig": {
                     "conceptNames": [
                         "Vitals"
                     ],
                     "numberOfVisits": 4
                 },
-                "allObservationDetails": {
+                "expandedViewConfig": {
                     "conceptNames": [
                         "Vitals"
                     ],
@@ -95,15 +95,15 @@
             "history_and_examinations": {
                 "title": "History and Examinations",
                 "translationKey": "DASHBOARD_TITLE_HISTORY_AND_EXAMINATIONS_KEY",
-                "name": "vitals",
+                "type": "vitals",
                 "isObservation": true,
-                "dashboardParams": {
+                "dashboardConfig": {
                     "conceptNames": [
                         "History and Examination"
                     ],
                     "numberOfVisits": 4
                 },
-                "allObservationDetails": {
+                "expandedViewConfig": {
                     "conceptNames": [
                         "History and Examination"
                     ],
@@ -116,15 +116,15 @@
             "vaccination": {
                 "title": "Immunization history",
                 "translationKey": "Immunization history",
-                "name": "Immunization history",
+                "type": "Immunization history",
                 "isObservation": true,
-                "dashboardParams": {
+                "dashboardConfig": {
                     "conceptNames": [
                         "Immunization Incident Template"
                     ],
                     "numberOfVisits": 4
                 },
-                "allObservationDetails": {
+                "expandedViewConfig": {
                     "conceptNames": [
                         "Immunization Incident Template"
                     ],
@@ -137,9 +137,9 @@
             "maternalhealth": {
                 "title": "Maternal Health",
                 "translationKey": "Maternal Health",
-                "name": "Maternal Health",
+                "type": "Maternal Health",
                 "isObservation": true,
-                "dashboardParams": {
+                "dashboardConfig": {
                     "conceptNames": [
                          "ANC visit information",
                         "PNC visit information",
@@ -148,7 +148,7 @@
                     ],
                     "numberOfVisits": 4
                 },
-                "allObservationDetails": {
+                "expandedViewConfig": {
                     "conceptNames": [
                          "ANC visit information",
                         "PNC visit information",
@@ -164,16 +164,16 @@
             "patienthistory": {
                 "title": "Patient History",
                 "translationKey": "Patient History",
-                "name": "Patient History",
+                "type": "Patient History",
                 "isObservation": true,
-                "dashboardParams": {
+                "dashboardConfig": {
                     "conceptNames": [
                         "General patient",
                         "Treatment note"
                     ],
                     "numberOfVisits": 4
                 },
-                "allObservationDetails": {
+                "expandedViewConfig": {
                     "conceptNames": [
                         "General patient",
                         "Treatment note"
@@ -187,9 +187,9 @@
             "ConsultationNotes": {
                 "title": "Consultation Notes",
                 "translationKey": "DASHBOARD_TITLE_Consultation_KEY",
-                "name": "Consultation Notes",
+                "type": "Consultation Notes",
                 "isObservation": true,
-                "dashboardParams": {
+                "dashboardConfig": {
                     "conceptNames": [
                         "Consultation Note"
                     ],
@@ -200,8 +200,8 @@
             "visits": {
                 "title": "Visits",
                 "translationKey": "DASHBOARD_TITLE_VISITS_KEY",
-                "name": "visits",
-                "dashboardParams": {
+                "type": "visits",
+                "dashboardConfig": {
                     "title": null,
                     "maximumNoOfVisits": 10
                 },

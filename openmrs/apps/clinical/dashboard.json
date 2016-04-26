@@ -14,7 +14,7 @@
         "diagnosis": {
             "translationKey": "Diagnosis",
             "name": "diagnosis",
-            "showDetailsButton": false,
+            "showDetailsButton": true,
             "showCertainty": true,
             "showOrder": true,
             "displayOrder": 1

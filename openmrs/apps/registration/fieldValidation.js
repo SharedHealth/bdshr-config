@@ -15,18 +15,18 @@ var getLunhAlgorithmSum = function(healthId) {
 		isEvenIndexFromLast = !isEvenIndexFromLast;
 	}
 	return lunhAlgorithmSum;
-}
+};
 
 var containFourConsecutiveDigits = function(healthId) {
 	var healthIdToCheck = healthId.slice(0, healthId.length - 1);
 	return healthIdToCheck.match(/([0-9])\1\1\1/);
-}
+};
 
 var containTwoSetsOfThreeConsecutiveDigits = function(healthId) {
 	var healthIdToCheck = healthId.slice(0, healthId.length - 1);
 	var matches = healthIdToCheck.match(/([0-9])\1\1/g);
 	return matches && matches.length > 1;
-}
+};
 
 Bahmni.Registration.customValidator = {
 	"healthId": {

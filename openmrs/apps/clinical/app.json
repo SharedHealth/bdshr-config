@@ -91,16 +91,12 @@
                 }
             },
             "Commonly advised drugs": {
-                "dropdown":true
-            },
-            "Drug detail" : {
+                "dropdown":true,
                 "allowAddMore": true
             },
             "CHW common patient diagnosis" : {
-               "dropdown": true
-            },
-            "Patient problem" : {
-               "allowAddMore": true
+                "dropdown": true,
+                "allowAddMore": true
             }
         },
         "drugOrder": {

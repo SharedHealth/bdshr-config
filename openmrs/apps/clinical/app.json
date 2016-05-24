@@ -81,9 +81,7 @@
                 "allowFutureDates": true
             },
             "Place of delivery": {
-                "autocomplete": {
-                    "src": "self"
-                }
+                "dropdown" : true
             },
             "Outcome of delivery": {
                 "autocomplete": {

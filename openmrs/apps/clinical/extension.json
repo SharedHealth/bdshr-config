@@ -29,6 +29,7 @@
             "translationKey": "Active",
             "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard"
         },
+        "offline": false,
         "label": "Active",
         "order": 2,
         "requiredPrivilege": "app:clinical"

@@ -144,7 +144,8 @@
                          "ANC visit information",
                         "PNC visit information",
                         "delivery information",
-                        "Newborn information"
+                        "Newborn information",
+                        "Pregnancy Intake"
                     ],
                     "numberOfVisits": 4
                 },

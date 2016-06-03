@@ -68,7 +68,7 @@
             "Newborn care received": {
                 "multiSelect": true
             },
-            "Baby Information": {
+            "Baby information": {
                 "allowAddMore": true
             },
             "Treatment Given": {

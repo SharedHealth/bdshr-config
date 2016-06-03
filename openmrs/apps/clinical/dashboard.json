@@ -152,8 +152,9 @@
                     "conceptNames": [
                          "ANC visit information",
                         "PNC visit information",
-                        "delivery information",
-                        "Newborn information"
+                        "Delivery Information",
+                        "Newborn information",
+                        "Pregnancy Intake"
                     ],
                     "numberOfVisits": 4,
                     "showDetailsButton": true,
@@ -197,6 +198,49 @@
                 },
                 "displayOrder": 8
             },
+            "childlhealth": {
+                "title": "Child Health (under 5)",
+                "translationKey": "Child Health (under 5)",
+                "type": "Child Health(under 5)",
+                "isObservation": true,
+                "dashboardConfig": {
+                    "conceptNames": [
+                        "Child Health"
+                    ],
+                    "numberOfVisits": 4
+                },
+                "expandedViewConfig": {
+                    "conceptNames": [
+                        "Child Health"
+                    ],
+                    "numberOfVisits": 4,
+                    "showDetailsButton": true,
+                    "pivotTable": {}
+                },
+                "displayOrder": 9
+            },
+            "familyplanning": {
+                "title": "Family Planning Services",
+                "translationKey": "Family Planning Services",
+                "type": "Family Planning Services",
+                "isObservation": true,
+                "dashboardConfig": {
+                    "conceptNames": [
+                        "Family Planning Services"
+                    ],
+                    "numberOfVisits": 4
+                },
+                "expandedViewConfig": {
+                    "conceptNames": [
+                        "Family Planning Services"
+                    ],
+                    "numberOfVisits": 4,
+                    "showDetailsButton": true,
+                    "pivotTable": {}
+                },
+                "displayOrder": 10
+            },
+
             "visits": {
                 "title": "Visits",
                 "translationKey": "DASHBOARD_TITLE_VISITS_KEY",
@@ -205,7 +249,7 @@
                     "title": null,
                     "maximumNoOfVisits": 10
                 },
-                "displayOrder": 9
+                "displayOrder": 11
             }
         }
     }

@@ -38,9 +38,7 @@
         "showMiddleName": false,
         "addressHierarchy": {
             "showAddressFieldsTopDown": true,
-            "freeTextAddressFields": [
-                "address1"
-            ]
+            "strictAutocompleteFromLevel": "address2"
         },
         "conceptSetUI": {
             "REGISTRATION FEES": {

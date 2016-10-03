@@ -40,5 +40,11 @@ Bahmni.Registration.customValidator = {
 			return (getLunhAlgorithmSum(value) % 10) == 0;
 		},
 		errorMessage: "Please Enter Valid HID."
-	}
+	},
+     "birthdate":{
+         method: function(name, value, attributeDetails) {
+             return (new Date().getFullYear()-value.getFullYear()) <= 115;
+         },
+         errorMessage: "Patient age must not be less than or equal 115 years."
+     }
 };

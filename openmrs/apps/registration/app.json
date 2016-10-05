@@ -21,6 +21,7 @@
         "activeVisitUuid"
     ],
     "config": {
+        "showEnterID": false,
         "autoCompleteFields": [
             "familyName"
         ],

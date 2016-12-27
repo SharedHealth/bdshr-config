@@ -7,7 +7,6 @@
                 "title": "Patient Information",
                 "type": "patientInformation",
                 "patientAttributes": [
-                    "healthId",
                     "fatherName",
                     "spouseName",
                     "nationalId",

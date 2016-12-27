@@ -19,11 +19,6 @@
         "visitUuid"
     ],
     "config": {
-        "patientContext": {
-            "additionalPatientIdentifiers": [
-                "Health Id"
-            ]
-        },
         "obsIgnoreList": [],
         "maxConceptSetLevels": 3,
         "visitTypeForRetrospectiveEntries": "field",

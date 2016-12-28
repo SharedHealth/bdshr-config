@@ -105,7 +105,6 @@
                 "placeholder": "ID/Phone/Father/Spouse",
                 "fields": [
                     "nationalId",
-                    "healthId",
                     "birthRegistrationId",
                     "phoneNumber",
                     "fatherName",

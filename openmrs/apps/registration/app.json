@@ -26,6 +26,10 @@
             "familyName"
         ],
         "patientInformation": {
+            "hidCardInformation": {
+                "title":"Health Id Card Information",
+                "attributes":["hidCardIssued"]
+            },
             "hidden": {
                 "attributes": [
                     "addressCode",

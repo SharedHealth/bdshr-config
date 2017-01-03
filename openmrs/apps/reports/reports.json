@@ -1,0 +1,9 @@
+{
+  "chwHIDCardIssuedReport": {
+    "name": "CHW User HealthIdCard issued report",
+    "type": "MRSGeneric",
+    "config": {
+      "sqlPath": "/var/www/bahmni_config/openmrs/apps/reports/sql/chwHIDCardIssuedReport.sql"
+    }
+  }
+}

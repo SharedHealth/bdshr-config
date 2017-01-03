@@ -16,7 +16,7 @@
         "translationKey": "Clinical",
         "url": "../clinical/index.html",
         "icon": "fa-stethoscope",
-        "order": 3,
+        "order": 2,
         "requiredPrivilege": "app:clinical"
     },
     "bahmni_nationalregistry_search": {
@@ -26,7 +26,17 @@
         "translationKey": "National Registry",
         "url": "../../openmrs/shrclient/mciPatient.page",
         "icon": "fa-user",
-        "order": 7,
+        "order": 3,
         "requiredPrivilege": "National Registry"
+    },
+    "bahmni_reports": {
+        "id": "bahmni.reports",
+        "extensionPointId": "org.bahmni.home.dashboard",
+        "type": "link",
+        "translationKey": "MODULE_LABEL_REPORTS_KEY",
+        "url": "../reports/#/dashboard",
+        "icon": "fa-pencil-square-o",
+        "order": 4,
+        "requiredPrivilege": "app:admin"
     }
 }

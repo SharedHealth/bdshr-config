@@ -37,6 +37,6 @@
         "url": "../reports/#/dashboard",
         "icon": "fa-pencil-square-o",
         "order": 4,
-        "requiredPrivilege": "app:admin"
+        "requiredPrivilege": "app:reports"
     }
 }

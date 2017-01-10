@@ -38,5 +38,15 @@
         "icon": "fa-pencil-square-o",
         "order": 4,
         "requiredPrivilege": "app:reports"
+    },
+    "bahmni_hidcards_print": {
+        "id": "bahmni.hidcards.print",
+        "extensionPointId": "org.bahmni.home.dashboard",
+        "type": "link",
+        "translationKey": "Print Health ID Cards",
+        "url": "../../openmrs/shrclient/patientHids.page",
+        "icon": "fa-user",
+        "order": 5,
+        "requiredPrivilege": "Print HID Card"
     }
 }

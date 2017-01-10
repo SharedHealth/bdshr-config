@@ -190,4 +190,16 @@
             INSERT INTO idgen_seq_id_gen (id, next_sequence_value, base_character_set, first_identifier_base, prefix, suffix, min_length, max_length) VALUES (@source_id, 200000, '0123456789', '200000', 'BDH', '', 9,9);
         </sql>
     </changeSet>
+    <changeSet id="BD-201701061702" author="Dubey,Anjaly" context="setup">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                select count(*) from global_property where property = 'user.fieldWorkerRoleName';
+            </sqlCheck>
+        </preConditions>
+        <comment>Adding a global property for field worker role name</comment>
+        <sql>
+            set @uuid = uuid();
+            insert into global_property (property, description, uuid) values ('user.fieldWorkerRoleName', 'Role for field workers', @uuid);
+        </sql>
+    </changeSet>
 </databaseChangeLog>

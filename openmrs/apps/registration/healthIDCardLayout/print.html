@@ -1,0 +1,92 @@
+<script src="/bahmni_config/openmrs/apps/registration/healthIDCardLayout/js/jQuery-3.1.1.min.js"></script>
+<script src="/bahmni_config/openmrs/apps/registration/healthIDCardLayout/js/jsBarCode.js"></script>
+<link rel="stylesheet" href="/bahmni_config/openmrs/apps/registration/healthIDCardLayout/css/print.css"/>
+
+<div class="healthId">
+    <div class="patient_details">
+        <img src="/bahmni_config/openmrs/apps/registration/healthIDCardLayout/images/gov_logo.jpg" alt="dhis_logo"/>
+        <div class="details_1">
+            <label class="name">Name: <span>{{patient.givenName}} {{patient.familyName}}</span></label>
+            <label class="gender">Gender: <span>{{patient.gender}}</span></label>
+            <label class="dob">DOB: <span>{{patient.birthdate}}</span></label>
+            <label class="issued">Issued Date: <span>{{patient.registrationDate}}</span></label>
+        </div>
+
+        <div class="address_details">
+            <div class="address">Address:</div>
+
+            <div class="value">{{patient.address}}</div>
+        </div>
+
+    </div>
+
+    <div class="hid_details">
+        <svg class="barcode" jsbarcode-height="35px" jsbarcode-format="CODE39"
+             jsbarcode-value="{{patient.extraIdentifiers[0].identifier}}" jsbarcode-textmargin="0"
+             jsbarcode-fontoptions="bold"/>
+
+    </div>
+</div>
+<script>
+    function formatDate(date) {
+        var unquoteDate = date.replace(/"/g, "");
+        var today = new Date(unquoteDate);
+        var dd = today.getDate();
+        var mm = today.getMonth() + 1;
+
+        var yyyy = today.getFullYear();
+        if (dd < 10) {
+            dd = '0' + dd;
+        }
+        if (mm < 10) {
+            mm = '0' + mm;
+        }
+        return dd + "-" + mm + "-" + yyyy;
+    }
+
+    function buildAddress(addressJson) {
+        var address = JSON.parse(addressJson);
+        var delimiter = ", ";
+        var result = address.address1.concat(delimiter);
+        if (address.address2) {
+            result = result.concat(address.address2).concat(delimiter);
+        }
+        if (address.address3) {
+            result = result.concat(address.address3).concat(delimiter);
+        }
+        if (address.address4) {
+            result = result.concat(address.address4).concat(delimiter);
+        }
+        if (address.address5) {
+            result = result.concat(address.address5).concat(delimiter);
+        }
+        result = result.concat(address.countyDistrict).concat(delimiter);
+        return result.concat(address.stateProvince);
+    }
+
+    function getGender(genderCode) {
+        if (genderCode === "M") return "Male";
+        if (genderCode === "F") return "Female";
+        return "Transgender";
+    }
+
+    var existingOnload = window.onload;
+    window.onload = function() {
+        var genderElement = jQuery('.healthId .patient_details .gender span');
+        genderElement.text(getGender(genderElement.text()));
+
+        var dobElement = jQuery('.healthId .patient_details .dob span');
+        dobElement.text(formatDate(dobElement.text()));
+
+        var issuedElement = jQuery('.healthId .patient_details .issued span');
+        issuedElement.text(formatDate(issuedElement.text()));
+
+        var addressElement = jQuery('.healthId .patient_details .address_details .value');
+        addressElement.text(buildAddress(addressElement.text()));
+
+        JsBarcode(".barcode").init();
+        if(existingOnload){
+            existingOnload();
+        }
+    };
+</script>

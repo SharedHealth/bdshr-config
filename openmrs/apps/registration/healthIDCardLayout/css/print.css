@@ -1,0 +1,67 @@
+body{
+    width:960px;
+}
+
+.healthId {
+    border-style: solid;
+    width: 460px;
+    height:260px;
+    margin: 3.5px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Arial, Sans-serif !important;
+}
+
+.patient_details{
+    height: 170px;
+}
+
+.details_1{
+    height:90px;
+}
+
+.hid_details{
+    height: 100px;
+    text-align: center;
+}
+
+.healthId img {
+    margin: 0 0 0 2px;
+    float: left;
+    width:120px;
+    height:90px;
+}
+
+.healthId label {
+    margin: 2px;
+}
+
+.name,.issued{
+    display:block
+}
+
+.dob{
+    float:right;
+    margin: 0 10px 0 0 !important;
+}
+
+.healthId .address,.address_value{
+    display: inline-block;
+    height: auto;
+}
+
+.address_details{
+    margin:0 0 0 10px;
+}
+
+.address_details .address{
+    float: left;
+    width: 80px;
+    display: inline;
+}
+
+.address_details .value{
+    width: 370px;
+    float:right;
+}

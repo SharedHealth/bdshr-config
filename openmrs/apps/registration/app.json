@@ -28,6 +28,7 @@
         "patientInformation": {
             "hidCardInformation": {
                 "title":"Health Id Card Information",
+                "translationKey":"Health Id Card Information",
                 "attributes":["hidCardIssued"]
             },
             "hidden": {

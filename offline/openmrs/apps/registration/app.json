@@ -39,13 +39,6 @@
                 ]
             }
         },
-        "printOptions":[
-            {
-                "label": "Print Health ID Card",
-                "templateUrl": "/bahmni_config/openmrs/apps/registration/healthIDCardLayout/print.html",
-                "shortcutKey": "p"
-            }
-        ],
         "prepopulateFields" : ["Division", "Zilla", "Upazilla","Paurasava","Ward/Union"],
         "defaultIdentifierPrefix": "BDH",
         "defaultVisitType": "field",

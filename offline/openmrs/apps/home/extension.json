@@ -18,16 +18,5 @@
         "icon": "fa-stethoscope",
         "order": 2,
         "requiredPrivilege": "app:clinical"
-    },
-    "bahmni_nationalregistry_search": {
-        "id": "bahmni.nationalregistry.search",
-        "extensionPointId": "org.bahmni.home.dashboard",
-        "type": "link",
-        "translationKey": "National Registry",
-        "url": "../../openmrs/shrclient/mciPatient.page",
-        "icon": "fa-user",
-        "order": 3,
-        "requiredPrivilege": "National Registry",
-        "exclusiveOnlineModule": true
     }
 }

@@ -410,4 +410,37 @@
             VALUES ('hidCardIssued', 'Health Id Card Issued', 'java.lang.Boolean', '0', 1, curdate(), 0, 6, uuid());
         </sql>
     </changeSet>
+    <changeSet id="BD-201701191431" author="neha,anjaly">
+        <preConditions  onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">
+                select count(*) from person_attribute_type where name = 'givenNameLocal';
+            </sqlCheck>
+        </preConditions>
+        <comment>Unretiring attribute givenNameLocal</comment>
+        <sql>
+            UPDATE person_attribute_type SET retired = 0, retired_by = null, date_retired = null WHERE name = 'givenNameLocal';
+        </sql>
+    </changeSet>
+    <changeSet id="BD-201701191432" author="neha,anjaly">
+        <preConditions  onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">
+                select count(*) from person_attribute_type where name = 'familyNameLocal';
+            </sqlCheck>
+        </preConditions>
+        <comment>Unretiring attribute familyNameLocal</comment>
+        <sql>
+            UPDATE person_attribute_type SET retired = 0, retired_by = null, date_retired = null WHERE name = 'familyNameLocal';
+        </sql>
+    </changeSet>
+    <changeSet id="BD-201701191433" author="neha,anjaly">
+        <preConditions  onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">
+                select count(*) from person_attribute_type where name = 'middleNameLocal';
+            </sqlCheck>
+        </preConditions>
+        <comment>Unretiring attribute middleNameLocal</comment>
+        <sql>
+            UPDATE person_attribute_type SET retired = 0, retired_by = null, date_retired = null WHERE name = 'middleNameLocal';
+        </sql>
+    </changeSet>
 </databaseChangeLog>

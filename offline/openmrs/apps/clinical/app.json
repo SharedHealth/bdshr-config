@@ -1,0 +1,125 @@
+{
+    "id": "bahmni.clinical",
+    "extensionPoints": [
+        {
+            "id": "org.bahmni.clinical.consultation.board",
+            "description": "Bahmni Clinical Consultation Page"
+        },
+        {
+            "id": "org.bahmni.clinical.conceptSetGroup.*",
+            "description": "Define conceptsets part of a conceptset group"
+        },
+        {
+            "id": "org.bahmni.patient.search",
+            "description": "Bahmni Patient search, lookups Page"
+        }
+    ],
+    "contextModel": [
+        "patientUuid",
+        "visitUuid"
+    ],
+    "config": {
+        "obsIgnoreList": [],
+        "maxConceptSetLevels": 3,
+        "visitTypeForRetrospectiveEntries": "field",
+        "allowConsultationWhenNoOpenVisit": true,
+        "allowOnlyCodedDiagnosis": true,
+        "defaultVisitType": "field",
+        "conceptSetUI": {
+            "Cause of Death": {
+                "answersConceptName": "Diagnosis Answers",
+                "autocomplete": true
+            },
+            "Immunization Reason": {
+                "autocomplete": true
+            },
+            "No Immunization Reason": {
+                "autocomplete": true
+            },
+            "Quantity Units": {
+                "autocomplete": true
+            },
+            "Immunization Incident Vaccine": {
+                "required": true,
+                "dropdown" : true
+            },
+            "Route of Administration": {
+                "autocomplete": true
+            },
+            "Diagnosis": {
+                "freeTextAutocomplete": true,
+                "answersConceptName": "Diagnosis Answers"
+            },
+            "Immunization Status": {
+                "autocomplete": true
+            },
+            "Birth Weight": {
+                "autocomplete": true
+            },
+            "Treatment For Diarrhea": {
+                "multiSelect": true
+            },
+            "Danger sign": {
+                "multiSelect": true
+            },
+            "Family Planning": {
+                "multiSelect": true
+            },
+            "Newborn care received": {
+                "multiSelect": true
+            },
+            "Baby information": {
+                "allowAddMore": true
+            },
+            "Treatment Given": {
+                "multiSelect": true
+            },
+            "Immunization Incident Group": {
+                "allowAddMore": true
+            },
+            "Estimated date of delivery": {
+                "allowFutureDates": true
+            },
+            "Place of delivery": {
+                "dropdown" : true
+            },
+            "Outcome of delivery": {
+                "autocomplete": {
+                    "src": "self"
+                }
+            },
+            "Commonly advised drugs": {
+                "dropdown":true,
+                "allowAddMore": true
+            },
+            "CHW common patient diagnosis" : {
+                "dropdown": true,
+                "allowAddMore": true
+            }
+        },
+        "drugOrder": {
+            "defaultRoute": "Oral",
+            "defaultDurationUnit": "Day(s)",
+            "defaultDoseUnit": "Tablet(s)",
+            "defaultInstructions": "As directed",
+            "drugFormDefaults": {
+                "Ayurvedic": {
+                    "doseUnits": "Teaspoon",
+                    "route": "Oral"
+                },
+                "Capsule": {
+                    "doseUnits": "Capsule(s)",
+                    "route": "Oral"
+                },
+                "Powder": {
+                    "route": "Intrathecal"
+                },
+                "Injection": {
+                    "doseUnits": "mg",
+                    "route": "Intravenous"
+                }
+            }
+        }
+    }
+}
+

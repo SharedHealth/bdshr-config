@@ -1,0 +1,257 @@
+{
+    "general": {
+        "dashboardName": "Dashboard",
+        "displayByDefault": true,
+        "sections": {
+            "patientInformation": {
+                "title": "Patient Information",
+                "type": "patientInformation",
+                "patientAttributes": [
+                    "healthId",
+                    "fatherName",
+                    "spouseName",
+                    "nationalId",
+                    "education",
+                    "householdCode",
+                    "birthRegistrationId",
+                    "occupation",
+                    "phoneNumber"
+                ],
+                "addressFields": [
+                    "address1",
+                    "address2",
+                    "address3",
+                    "address4",
+                    "address5",
+                    "countyDistrict",
+                    "stateProvince"
+                ],
+                "displayOrder": 0
+            },
+            "diagnosis": {
+                "translationKey": "DASHBOARD_TITLE_DIAGNOSIS_KEY",
+                "type": "diagnosis",
+                "showCertainty": true,
+                "showDetailsButton": true,
+                "showOrder": false,
+                "displayOrder": 1
+            },
+            "treatments": {
+                "title": "Treatments",
+                "translationKey": "DASHBOARD_TITLE_TREATMENTS_KEY",
+                "type": "treatment",
+                "dashboardConfig": {
+                    "showFlowSheet": true,
+                    "showListView": true,
+                    "showRoute": true,
+                    "showDrugForm": true,
+                    "numberOfVisits": 5,
+                    "showOtherActive": true,
+                    "showDetailsButton": true
+                },
+                "expandedViewConfig": {
+                    "title": "Treatments",
+                    "translationKey": "DASHBOARD_TITLE_TREATMENTS_KEY",
+                    "showFlowSheet": true,
+                    "showListView": true,
+                    "showRoute": true,
+                    "showDrugForm": true,
+                    "numberOfVisits": 10,
+                    "showOtherActive": true,
+                    "showDetailsButton": true
+                },
+                "displayOrder": 2
+            },
+            "vitals": {
+                "title": "Vitals",
+                "translationKey": "DASHBOARD_TITLE_VITALS_KEY",
+                "type": "vitals",
+                "isObservation": true,
+                "dashboardConfig": {
+                    "conceptNames": [
+                        "Vitals"
+                    ],
+                    "numberOfVisits": 4
+                },
+                "expandedViewConfig": {
+                    "conceptNames": [
+                        "Vitals"
+                    ],
+                    "numberOfVisits": 4,
+                    "showDetailsButton": true,
+                    "pivotTable": {
+                        "numberOfVisits": "10",
+                        "groupBy": "encounters",
+                        "obsConcepts": [
+                            "Weight",
+                            "Vitals"
+                        ],
+                        "drugConcepts": [],
+                        "labConcepts": []
+                    }
+                },
+                "displayOrder": 3
+            },
+            "history_and_examinations": {
+                "title": "History and Examinations",
+                "translationKey": "DASHBOARD_TITLE_HISTORY_AND_EXAMINATIONS_KEY",
+                "type": "vitals",
+                "isObservation": true,
+                "dashboardConfig": {
+                    "conceptNames": [
+                        "History and Examination"
+                    ],
+                    "numberOfVisits": 4
+                },
+                "expandedViewConfig": {
+                    "conceptNames": [
+                        "History and Examination"
+                    ],
+                    "numberOfVisits": 4,
+                    "showDetailsButton": true,
+                    "pivotTable": {}
+                },
+                "displayOrder": 4
+            },
+            "vaccination": {
+                "title": "Immunization history",
+                "translationKey": "Immunization history",
+                "type": "Immunization history",
+                "isObservation": true,
+                "dashboardConfig": {
+                    "conceptNames": [
+                        "Immunization Incident Template"
+                    ],
+                    "numberOfVisits": 4
+                },
+                "expandedViewConfig": {
+                    "conceptNames": [
+                        "Immunization Incident Template"
+                    ],
+                    "numberOfVisits": 4,
+                    "showDetailsButton": true,
+                    "pivotTable": {}
+                },
+                "displayOrder": 5
+            },
+            "maternalhealth": {
+                "title": "Maternal Health",
+                "translationKey": "Maternal Health",
+                "type": "Maternal Health",
+                "isObservation": true,
+                "dashboardConfig": {
+                    "conceptNames": [
+                         "ANC visit information",
+                        "PNC visit information",
+                        "delivery information",
+                        "Newborn information",
+                        "Pregnancy Intake"
+                    ],
+                    "numberOfVisits": 4
+                },
+                "expandedViewConfig": {
+                    "conceptNames": [
+                         "ANC visit information",
+                        "PNC visit information",
+                        "Delivery Information",
+                        "Newborn information",
+                        "Pregnancy Intake"
+                    ],
+                    "numberOfVisits": 4,
+                    "showDetailsButton": true,
+                    "pivotTable": {}
+                },
+                "displayOrder": 6
+            },
+            "patienthistory": {
+                "title": "Patient History",
+                "translationKey": "Patient History",
+                "type": "Patient History",
+                "isObservation": true,
+                "dashboardConfig": {
+                    "conceptNames": [
+                        "General patient",
+                        "Treatment note"
+                    ],
+                    "numberOfVisits": 4
+                },
+                "expandedViewConfig": {
+                    "conceptNames": [
+                        "General patient",
+                        "Treatment note"
+                    ],
+                    "numberOfVisits": 4,
+                    "showDetailsButton": true,
+                    "pivotTable": {}
+                },
+                "displayOrder": 7
+            },
+            "ConsultationNotes": {
+                "title": "Consultation Notes",
+                "translationKey": "DASHBOARD_TITLE_Consultation_KEY",
+                "type": "Consultation Notes",
+                "isObservation": true,
+                "dashboardConfig": {
+                    "conceptNames": [
+                        "Consultation Note"
+                    ],
+                    "numberOfVisits": "2"
+                },
+                "displayOrder": 8
+            },
+            "childlhealth": {
+                "title": "Child Health (under 5)",
+                "translationKey": "Child Health (under 5)",
+                "type": "Child Health(under 5)",
+                "isObservation": true,
+                "dashboardConfig": {
+                    "conceptNames": [
+                        "Child Health"
+                    ],
+                    "numberOfVisits": 4
+                },
+                "expandedViewConfig": {
+                    "conceptNames": [
+                        "Child Health"
+                    ],
+                    "numberOfVisits": 4,
+                    "showDetailsButton": true,
+                    "pivotTable": {}
+                },
+                "displayOrder": 9
+            },
+            "familyplanning": {
+                "title": "Family Planning Services",
+                "translationKey": "Family Planning Services",
+                "type": "Family Planning Services",
+                "isObservation": true,
+                "dashboardConfig": {
+                    "conceptNames": [
+                        "Family Planning Services"
+                    ],
+                    "numberOfVisits": 4
+                },
+                "expandedViewConfig": {
+                    "conceptNames": [
+                        "Family Planning Services"
+                    ],
+                    "numberOfVisits": 4,
+                    "showDetailsButton": true,
+                    "pivotTable": {}
+                },
+                "displayOrder": 10
+            },
+
+            "visits": {
+                "title": "Visits",
+                "translationKey": "DASHBOARD_TITLE_VISITS_KEY",
+                "type": "visits",
+                "dashboardConfig": {
+                    "title": null,
+                    "maximumNoOfVisits": 10
+                },
+                "displayOrder": 11
+            }
+        }
+    }
+}

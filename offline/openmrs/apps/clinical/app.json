@@ -25,6 +25,7 @@
         "allowConsultationWhenNoOpenVisit": true,
         "allowOnlyCodedDiagnosis": true,
         "defaultVisitType": "field",
+        "quickPrints": true,
         "conceptSetUI": {
             "Cause of Death": {
                 "answersConceptName": "Diagnosis Answers",

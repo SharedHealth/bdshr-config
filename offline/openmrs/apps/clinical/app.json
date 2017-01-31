@@ -26,6 +26,9 @@
         "allowOnlyCodedDiagnosis": true,
         "defaultVisitType": "field",
         "quickPrints": true,
+        "networkConnectivity" : {
+            "showNetworkStatusMessage": false
+        },
         "conceptSetUI": {
             "Cause of Death": {
                 "answersConceptName": "Diagnosis Answers",

@@ -69,6 +69,10 @@
                 "pattern" : "^([A-Za-z]{1,25})$",
                 "errorMessage" : "Family name should only have alphabets, not even space. Max length is 25"
             },
+            "familyNameLocal" : {
+                "pattern" : "^\\S*$",
+                "errorMessage" : "Family name should not have spaces."
+            },
             "nationalId": {
                 "pattern": "^(\\d{13}|\\d{17})$",
                 "errorMessage": "National ID should be 13 or 17 digits"

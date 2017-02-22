@@ -6,14 +6,14 @@
 }
 
 body {
-    width: 21cm;
+    width: 960px;
 }
 
 .healthId {
     font-family: SolaimanLipi !important;
     border-style: solid;
-    width: 8.1cm !important;
-    height: 5.05cm !important;
+    width: 8.2cm !important;
+    height: 5.1cm !important;
     margin: 30px;
     float: left;
     border-color: #afafaf;
@@ -53,7 +53,7 @@ body {
 
 .healthId img {
     float: left;
-    width:46px;
+    width:39px;
     height:39px
 }
 
